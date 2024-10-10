@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/DMSans-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans Italic";
+  src: url("./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-display: swap;
+}
+
+.hero {
+  --font-family: "DMSans", sans-serif;
+  padding-block: max(6vh, 2rem);
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: grid;
+  gap: 2rem;
+  place-content: center;
+  place-items: center;
+
+  --display-large-500: 500 clamp(3rem, 5vw + 1rem, 3.5rem) var(--font-family);
+  --heading-huge-500: 500 clamp(3rem, 5vw + 1rem, 3.65rem) var(--font-family);
+  --heading-large-500: 500 clamp(1.8rem, 4vw + 0.5rem, 2.35rem)
+    var(--font-family);
+  --heading-medium-500: 500 clamp(1.9rem, 3.5vw + 0.5rem, 2.25rem)
+    var(--font-family);
+  --heading-small-500: 500 clamp(1.75rem, 3vw + 0.5rem, 1.95rem)
+    var(--font-family);
+  --body-medium-400: 400 1rem var(--font-family);
+  --body-medium-300: 300 1rem var(--font-family);
+
+  --white-color: #fffeff;
+  --black-color: #120f0e;
+  --cream-color: #faeee2;
+  --yellow-color: #ffcd6f;
+  --purple-color: #7651dc;
+  --dark-purple-color: #5d39be;
+  --light-purple-color: #dcd1fc;
+}

@@ -1,0 +1,187 @@
+#cardFour,
+#cardFive,
+#cardSix,
+#cardSeven,
+#cardEight {
+  padding-block: 1.35rem;
+}
+
+#cardOne {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 3.5rem 1.25rem;
+}
+
+#cardOne .card__title {
+  font: var(--display-large-500);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+#cardOne .card__title em {
+  font-style: normal;
+  color: var(--yellow-color);
+}
+
+#cardOne .card__description {
+  font: var(--body-medium-300);
+}
+
+#cardOne .card__image {
+  min-width: 180px;
+  width: 35%;
+  max-width: unset;
+}
+
+#cardTwo {
+  padding-inline: 2rem;
+  gap: 1.25rem;
+  background-color: var(--cream-color);
+}
+
+#cardTwo .card__title em {
+  font-style: italic;
+  color: var(--purple-color);
+}
+
+#cardTwo .card__image {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+#cardSix {
+  background-color: var(--yellow-color);
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+#cardTwo .card__title,
+#cardSix .card__title {
+  font: var(--heading-medium-500);
+  letter-spacing: -0.12rem;
+  line-height: 0.95;
+}
+
+#cardThree {
+  padding: 2rem;
+  gap: 2rem;
+  background-color: var(--light-purple-color);
+}
+
+#cardThree .card__image {
+  width: 170%;
+  max-width: unset;
+}
+
+#cardThree .card__title {
+  font: var(--heading-medium-500);
+  letter-spacing: -0.12rem;
+  line-height: 0.95;
+}
+
+#cardFour {
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+  background-color: var(--yellow-color);
+}
+
+#cardFour .card__image {
+  margin-bottom: -50%;
+}
+
+#cardFive {
+  background-color: var(--white-color);
+  justify-content: space-between;
+}
+
+#cardFive .card__image {
+  width: 145%;
+  max-width: unset;
+}
+
+#cardFour .card__title,
+#cardFive .card__title {
+  font: var(--heading-small-500);
+  letter-spacing: -0.12rem;
+  line-height: 0.95;
+}
+
+#cardSeven {
+  background-color: var(--white-color);
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+#cardSeven .card__title {
+  display: flex;
+  font: var(--heading-huge-500);
+  line-height: 0.95;
+}
+
+#cardSeven .card__title-greater-sign {
+  line-height: 0.8;
+}
+
+#cardSeven .card__image {
+  margin-top: 0.75rem;
+  max-width: 80%;
+}
+
+#cardEight {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+#cardEight .card__title {
+  font: var(--heading-large-500);
+  line-height: 0.95;
+}
+
+@media screen and (max-width: 650px) {
+  #cardFive .card__image {
+    width: 100%;
+  }
+
+  #cardFour .card__image {
+    max-width: 60%;
+    margin-bottom: -10%;
+  }
+
+  #cardThree {
+    text-align: center;
+  }
+
+  #cardThree .card__image {
+    width: 100%;
+  }
+
+  #cardEight {
+    padding: 1.75rem 5rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #cardSeven {
+    gap: 0.95rem;
+  }
+
+  #cardSeven .card__image {
+    max-width: 50%;
+  }
+
+  #cardTwo .card__image {
+    margin: 0 auto 0 0;
+    max-width: 60%;
+  }
+
+  #cardSix .card__image {
+    max-width: 70%;
+  }
+}

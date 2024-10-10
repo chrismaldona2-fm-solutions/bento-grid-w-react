@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  text-wrap: pretty;
+}

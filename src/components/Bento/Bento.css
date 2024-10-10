@@ -1,0 +1,95 @@
+.bento {
+  width: 90%;
+  max-width: 1100px;
+
+  display: grid;
+  place-content: center;
+  margin-inline: 2rem;
+  gap: 1.75rem;
+  gap: 32px;
+  grid-template-areas:
+    "box2 box1 box1 box3"
+    "box2 box1 box1 box3"
+    "box2 box5 box4 box3"
+    "box6 box5 box4 box3"
+    "box6 box7 box8 box8"
+    "box6 box7 box8 box8";
+  grid-auto-flow: row;
+}
+
+.bento div:nth-child(1) {
+  grid-area: box1;
+}
+
+.bento div:nth-child(2) {
+  grid-area: box2;
+}
+
+.bento div:nth-child(3) {
+  grid-area: box3;
+}
+
+.bento div:nth-child(4) {
+  grid-area: box4;
+}
+
+.bento div:nth-child(5) {
+  grid-area: box5;
+}
+
+.bento div:nth-child(6) {
+  grid-area: box6;
+}
+
+.bento div:nth-child(7) {
+  grid-area: box7;
+}
+
+.bento div:nth-child(8) {
+  grid-area: box8;
+}
+
+.singlecell-box {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.doublecell-box {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+@media screen and (max-width: 931px) {
+  .bento {
+    grid-template-areas:
+      "box1 box1 box3"
+      "box2 box4 box3"
+      "box7 box5 box6"
+      "box7 box5 box6"
+      "box8 box8 box6";
+  }
+
+  .doublecell-box {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bento {
+    grid-template-areas:
+      "box1"
+      "box5"
+      "box4"
+      "box3"
+      "box8"
+      "box7"
+      "box2"
+      "box6";
+  }
+
+  .doublecell-box {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

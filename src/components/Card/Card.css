@@ -1,0 +1,57 @@
+.card {
+  padding: 1.75rem 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+
+  overflow: hidden;
+  position: relative;
+
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.card__title {
+  font: var(--heading-medium-500);
+}
+
+.card.card--yellow {
+  background-color: var(--yellow-color);
+}
+
+.card.card--purple {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+}
+
+.card.card--light-purple {
+  background-color: var(--light-purple-color);
+}
+
+.card.card--cream {
+  background-color: var(--cream-color);
+}
+
+.card.card--white {
+  background-color: var(--white-color);
+}
+
+.card__description {
+  font: var(--body-medium-400);
+}
+
+.card--medium .card__title {
+  font: var(--heading-medium-500);
+}
+
+.card--small .card__title {
+  font: var(--heading-small-500);
+}
+
+.card--small .card__title,
+.card--medium .card__title {
+  letter-spacing: -0.08rem;
+  line-height: 0.95;
+}
