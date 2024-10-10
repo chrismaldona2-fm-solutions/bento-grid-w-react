@@ -4,8 +4,8 @@ This repository contains the solution to a Frontend Mentor project that involves
 
 ## Live Demo
 
-You can view the live version of the project deployed on Netlify at:
-[NetlifyApp](https://bento-grid-with-react.netlify.app/)
+You can view the live version of the project deployed on Netlify at: 
+[Bento Grid Netlify App](https://bento-grid-with-react.netlify.app/)
 
 ## Desktop Preview
 
